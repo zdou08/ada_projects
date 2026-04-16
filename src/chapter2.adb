@@ -1,8 +1,10 @@
-with Ada.Numerics.Aux;
-with Ada.Text_IO; use Ada.Text_IO;
-with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+package body Chapter2 is
 
-procedure Main is
+   procedure print_last_int is 
+      int : Integer := Integer'Last;
+   begin
+      Put_Line ("Integer: " & Integer'Image(int));
+   end print_last_int;
 
    -- basic loop
    procedure Hello is
@@ -80,13 +82,10 @@ procedure Main is
          Put_Line ("The Variable is " & Integer'Image(declare_var));
       end;
    end Declare_Variable;
-begin
-   Hello;
-   World;
-   Dlrow;
-   Infinite_Loop;
-   While_Loop;
-   Case_Statement;
-   Declare_Variable;
-   Put_Line ("Main Program Finished");
-end Main;
+
+   -- Provide input with output
+   procedure Add_Input (num1: in Integer; num2: in Integer; num_out: out Integer) is
+   begin
+      num_out := num1 + num2;
+   end Add_Input;
+end Chapter2;
