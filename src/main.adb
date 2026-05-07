@@ -8,6 +8,8 @@ with Parent.Child.Grandchild; use Parent.Child.Grandchild;
 with Parent.Child2; use Parent.Child2;
 with chapter5; use chapter5;
 
+-- To Run: gnatmake -P ./main_program.gpr
+
 procedure Main is
    test_num : Integer;
 begin
@@ -38,6 +40,10 @@ begin
 
    -- Chapter 5
    chapter5.Integer_Type;
+   chapter5.Modular_Int;
+   chapter5.Enumeration_Example;
+   chapter5.Floating_Point;
+   chapter5.Custom_Floating_Types;
 
    Put_Line ("Main Program Finished");
 end Main;
