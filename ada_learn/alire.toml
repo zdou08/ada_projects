@@ -1,0 +1,10 @@
+name = "ada_learn"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["zacharie dougherty"]
+maintainers = ["zacharie dougherty <zdougherty01@yahoo.com>"]
+maintainers-logins = ["zdou08"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
